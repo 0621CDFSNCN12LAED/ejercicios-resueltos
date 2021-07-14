@@ -1,0 +1,18 @@
+[
+  {
+    "titulo": "Practicar el switch",
+    "estado": "terminado"
+  },
+  {
+    "titulo": "Practicar el for",
+    "estado": "pendiente"
+  },
+  {
+    "titulo": "Practicar escribir primero los algoritmos",
+    "estado": "pendiente"
+  },
+  {
+    "titulo": "Ir a comprar lavandina",
+    "estado": "terminado"
+  }
+]
