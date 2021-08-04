@@ -1,0 +1,62 @@
+/* Fonts & Texts ====================  */
+
+body {
+  font-family: "Roboto";
+  font-size: 12px;
+}
+
+.text-title {
+  font-size: 24px;
+}
+
+.text-price {
+  font-size: 18px;
+}
+
+.text-discount {
+  font-size: 16px;
+}
+
+.text-desc {
+  font-size: 16px;
+}
+
+/* Colors ====================  */
+
+.ml-yellow-text {
+  color: #eac926;
+}
+.ml-blue-text {
+  color: #03264c;
+}
+.ml-lb-text {
+  color: #1259c3;
+}
+.ml-dark-text {
+  color: #666;
+}
+.ml-light-text {
+  color: #ebebeb;
+}
+.ml-green-text {
+  color: #39b54a;
+}
+
+.ml-yellow-bg {
+  background-color: #eac926;
+}
+.ml-blue-bg {
+  background-color: #03264c;
+}
+.ml-lb-bg {
+  background-color: #1259c3;
+}
+.ml-dark-bg {
+  background-color: #666;
+}
+.ml-light-bg {
+  background-color: #ebebeb;
+}
+.ml-green-bg {
+  background-color: #39b54a;
+}

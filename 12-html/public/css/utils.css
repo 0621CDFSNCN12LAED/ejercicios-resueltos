@@ -1,0 +1,16 @@
+html,
+body {
+  margin: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.padding {
+  padding: 24px;
+}
