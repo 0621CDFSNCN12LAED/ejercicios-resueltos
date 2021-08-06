@@ -1,0 +1,53 @@
+#ml-main-nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#ml-main-nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.burger-menu {
+    text-align: center;
+    font-size: 24px;
+    width: 44px;
+    height: 44px;
+    padding: 8px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.banner {
+    width: 100%;
+}
+
+#main-content {
+    padding: 0 5%;
+}
+
+.product {
+    border: 1px solid #ebebeb;
+}
+
+.product-wrapper {
+    padding: 5px;
+}
+
+.product-img {
+    border-bottom: 1px solid #ebebeb;
+}
+
+.product-content .text-desc {
+    display: none;
+}
+
+.truck-icon {
+    font-size: 16px;
+    padding: 5px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    border-radius: 50%;
+}
