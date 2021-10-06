@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mercado Liebre - Registro</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="/css/utils.css" />
+        <link rel="stylesheet" href="/css/theme.css" />
+
+        <link rel="stylesheet" href="/css/styles.css" />
+
+        <link
+            rel="stylesheet"
+            href="/css/styles-sm.css"
+            media="(min-width:480px)"
+        />
+        <link
+            rel="stylesheet"
+            href="/css/styles-md.css"
+            media="(min-width:768px)"
+        />
+        <link
+            rel="stylesheet"
+            href="/css/styles-lg.css"
+            media="(min-width:1280px)"
+        />
+    </head>
+    <body>
+        <header class="ml-yellow-bg padding-16">
+            <div class="flex justify-center flex align-center">
+                <img
+                    id="logo"
+                    class="w-50 w-33-sm"
+                    src="/img/logo-mercado-liebre.svg"
+                    alt=""
+                />
+                <div class="padding-8 w-50 w-33-sm">
+                    <div class="flex no-wrap searchbar w-100">
+                        <input
+                            type="text"
+                            class="w-100"
+                            placeholder="Buscar productos, marcas"
+                        />
+                        <button><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+                <p class="text-center w-100 w-33-sm">
+                    <i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y
+                    sin tarjeta de crédito
+                </p>
+            </div>
+            <nav
+                id="ml-main-nav"
+                class="hide flex show-sm justify-space-between"
+            >
+                <ul class="flex">
+                    <li class="padding-8">
+                        <a href="#">Ofertas</a>
+                    </li>
+                    <li class="padding-8">
+                        <a href="#">Tiendas Oficiales</a>
+                    </li>
+                    <li class="padding-8">
+                        <a href="#">Vender</a>
+                    </li>
+                    <li class="padding-8">
+                        <a href="#">Ayuda</a>
+                    </li>
+                </ul>
+                <ul class="flex">
+                    <li class="padding-8">
+                        <a href="#"
+                            >Creá tu cuenta <i class="far fa-id-card"></i
+                        ></a>
+                    </li>
+                    <li class="padding-8">
+                        <a href="#"
+                            >Ingresá <i class="fas fa-sign-in-alt"></i
+                        ></a>
+                    </li>
+                    <li class="padding-8">
+                        <a href="#"
+                            >Mis compras <i class="fas fa-shopping-basket"></i
+                        ></a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="burger-menu ml-lb-bg">
+                <i class="fas fa-bars ml-light-text"></i>
+            </div>
+        </header>
+        <main class="padding-16">
+            <h1>Registro</h1>
+            <form action="/" method="GET">
+                <div class="form-input">
+                    <label class="main-label" for="name"
+                        >Nombre y apellido</label
+                    >
+                    <input id="name" type="text" name="name" />
+                    <p class="error">Este campo es requerido</p>
+                </div>
+                <div class="form-input">
+                    <label class="main-label" for="username"
+                        >Nombre de usuario</label
+                    >
+                    <input id="username" type="text" name="username" />
+                    <!-- <p class="error">Este campo es requerido</p> -->
+                </div>
+                <div class="form-input">
+                    <label class="main-label" for="birthdate"
+                        >Fecha de nacimiento</label
+                    >
+                    <input id="birthdate" type="date" name="birthdate" />
+                </div>
+                <div class="form-input">
+                    <label class="main-label" for="address">Domicilio</label>
+                    <input id="address" type="text" name="address" />
+                </div>
+                <div class="form-input">
+                    <label class="main-label">Perfil de usuario</label>
+                    <input
+                        type="radio"
+                        name="user-profile"
+                        id="user-profile-seller"
+                        value="seller"
+                    />
+                    <label for="user-profile-seller">Vendedor</label>
+                    <input
+                        type="radio"
+                        name="user-profile"
+                        id="user-profile-buyer"
+                        value="buyer"
+                    />
+                    <label for="user-profile-buyer">Comprador</label>
+                </div>
+                <div class="form-input main-label">
+                    <label class="main-label">Intereses</label>
+                    <div>
+                        <input
+                            type="checkbox"
+                            name="moda"
+                            id="moda"
+                            value="moda"
+                        />
+                        <label for="moda">Moda</label>
+                    </div>
+                    <div>
+                        <input
+                            type="checkbox"
+                            name="hogar"
+                            id="hogar"
+                            value="hogar"
+                        />
+                        <label for="hogar">Hogar</label>
+                    </div>
+                    <div>
+                        <input
+                            type="checkbox"
+                            name="jugueteria"
+                            id="jugueteria"
+                            value="jugueteria"
+                        />
+                        <label for="jugueteria">Juguetería</label>
+                    </div>
+                    <div>
+                        <input
+                            type="checkbox"
+                            name="vida-sana"
+                            id="vida-sana"
+                            value="vida-sana"
+                        />
+                        <label for="vida-sana">Vida Sana</label>
+                    </div>
+                </div>
+
+                <div class="form-input">
+                    <label class="main-label" for="profile-pic"
+                        >Foto de perfil</label
+                    >
+                    <input
+                        id="profile-pic"
+                        type="file"
+                        name="profile-pic"
+                        accept="image/png,image/jpeg"
+                    />
+                </div>
+                <div class="form-input">
+                    <label class="main-label" for="password">Contraseña</label>
+                    <input id="password" type="password" name="password" />
+                </div>
+                <div class="form-input">
+                    <label class="main-label" for="rePassword"
+                        >Repetir Contraseña</label
+                    >
+                    <input id="rePassword" type="password" name="rePassword" />
+                </div>
+
+                <button type="submit">Enviar</button>
+                <button type="reset">Resetear</button>
+            </form>
+        </main>
+    </body>
+</html>

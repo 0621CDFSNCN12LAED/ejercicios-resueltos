@@ -1,0 +1,98 @@
+.searchbar input,
+.searchbar button {
+    background-color: white;
+    border: none;
+    height: 30px;
+}
+.searchbar {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#ml-main-nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#ml-main-nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.burger-menu {
+    text-align: center;
+    font-size: 24px;
+    width: 44px;
+    height: 44px;
+    padding: 8px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.banner {
+    display: block;
+    width: 100%;
+}
+
+#main-content {
+    padding: 0 5%;
+}
+
+.product {
+    padding: 15px;
+}
+
+.product-wrapper {
+    border: 1px solid #ebebeb;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.product-content {
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 10px;
+}
+
+.product-delivery-icon {
+    font-size: 16px;
+    padding: 5px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+.text-discount {
+    padding-left: 10px;
+    align-self: center;
+}
+
+.form-input .main-label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.form-input input {
+    width: 100%;
+}
+.form-input input[type="checkbox"],
+.form-input input[type="radio"] {
+    width: auto;
+}
+
+.form-input {
+    margin-bottom: 23px;
+}
+
+.error {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: red;
+    font-size: 10px;
+}

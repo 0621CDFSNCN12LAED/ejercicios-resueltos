@@ -1,0 +1,29 @@
+.product {
+    width: 25%;
+}
+
+.product-content .text-desc {
+    opacity: 0;
+}
+
+.product-wrapper {
+    border: 1px solid #ebebeb;
+    box-shadow: none;
+}
+
+.product-wrapper:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.product-wrapper:hover .text-desc {
+    transition: opacity ease-in 300ms;
+    opacity: 1;
+}
+
+.product-delivery-icon {
+    transition: transform ease-in-out 500ms;
+}
+
+.product-wrapper:hover .product-delivery-icon {
+    transform: rotate(360deg);
+}

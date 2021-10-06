@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+
+
+</head>
+
+<body>
+    <% if (locals.errors) {%>
+    <div>
+        <% for (let error of errors){%>
+        <li><%= error.msg %></li>
+        <% }%>
+    </div>
+    <% } %>
+    <form action="/users" method="POST">
+        <div>
+            <label for="name">Ingrese su nombre</label>
+            <input id="name" name="name" type="text">
+        </div>
+        <div>
+            <label for="color">Seleccione su color</label>
+            <select name="color" id="color">
+                <option value="white">white</option>
+                <option value="purple">purple</option>
+                <option value="crimson">crimson</option>
+                <option value="orchid">orchid</option>
+                <option value="aqua">aqua</option>
+            </select>
+        </div>
+        <div>
+            <label for="mail">Ingrese su mail</label>
+            <input id="mail" name="mail" type="text">
+        </div>
+        <div>
+            <label for="age">Ingrese su edad</label>
+            <input id="age" name="age" type="text">
+        </div>
+
+        <button>Enviar!</button>
+    </form>
+</body>
+
+</html>
