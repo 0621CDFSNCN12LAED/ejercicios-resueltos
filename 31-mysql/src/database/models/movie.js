@@ -7,6 +7,8 @@ module.exports = (sequelize) => {
       title: DataTypes.STRING,
       rating: DataTypes.DECIMAL,
       release_date: DataTypes.DATE,
+      length: DataTypes.INTEGER,
+      awards: DataTypes.INTEGER,
     },
     {
       tableName: "movies",
