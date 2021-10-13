@@ -5,7 +5,9 @@ const moviesService = require("../services/movies-service");
 
 module.exports = {
   list: (req, res) => {
-    Movie.findAll().then((movies) => {
+    Movie.findAll({
+      include: [{ association: "genre" }],
+    }).then((movies) => {
       console.log(movies[0]);
       res.render("moviesList", { movies });
     });

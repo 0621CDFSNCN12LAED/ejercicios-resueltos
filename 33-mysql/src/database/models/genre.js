@@ -14,6 +14,9 @@ module.exports = (sequelize) => {
   );
 
   //Asociaciones
+  model.associate = (models) => {
+    model.hasMany(models.Movie, { as: "movies", foreignKey: "genre_id" });
+  };
 
   return model;
 };
