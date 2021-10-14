@@ -1,4 +1,4 @@
-const { Movie } = require("../database/models");
+const { Movie, Genre } = require("../database/models");
 const moviesService = require("../services/movies-service");
 
 // ASYNC / AWAIT
@@ -6,7 +6,7 @@ const moviesService = require("../services/movies-service");
 module.exports = {
   list: (req, res) => {
     Movie.findAll({
-      include: [{ association: "genre" }],
+      include: [{ association: "genre" }, { association: "actors" }],
     }).then((movies) => {
       console.log(movies[0]);
       res.render("moviesList", { movies });
@@ -39,15 +39,16 @@ module.exports = {
     res.render("moviesAdd");
   },
   create: async (req, res) => {
-    console.log(req.body);
     await Movie.create(req.body);
     res.redirect("/movies");
   },
 
   edit: async (req, res) => {
-    const movie = await Movie.findByPk(req.params.id);
-    res.render("moviesEdit", { movie });
+    const movie = await Movie.findByPk(req.params.id, { include: ["genre"] });
+    const genres = await Genre.findAll();
+    res.render("moviesEdit", { movie, genres });
   },
+
   update: async (req, res) => {
     await Movie.update(req.body, {
       where: {
