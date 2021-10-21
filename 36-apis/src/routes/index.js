@@ -1,5 +1,6 @@
 const express = require("express");
 const genresRouter = require("./genresRoutes");
+const apiRouter = require("./api/index");
 const moviesRouter = require("./moviesRoutes");
 const authRouter = require("./authRoutes");
 const loginMiddleware = require("../middlewares/login-middleware");
@@ -16,5 +17,6 @@ router.get("/", function (req, res, next) {
 router.use(genresRouter);
 router.use(moviesRouter);
 router.use(authRouter);
+router.use("/api", apiRouter);
 
 module.exports = router;

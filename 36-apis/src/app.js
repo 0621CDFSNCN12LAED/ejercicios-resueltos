@@ -25,6 +25,7 @@ app.use(
     extended: true,
   })
 );
+app.use(express.json());
 
 // view engine setup
 app.set("views", path.resolve(__dirname, "./views"));
@@ -34,4 +35,4 @@ app.use(express.static(path.resolve(__dirname, "../public")));
 
 app.use("/", indexRouter);
 
-app.listen(3000, () => console.log("Servidor corriendo en el puerto 3001"));
+app.listen(3000, () => console.log("Servidor corriendo en el puerto 3000"));
