@@ -1,6 +1,6 @@
 import defaultProfilePic from "../../../assets/images/jordan-walke.png";
 
-export default function TopBar(props) {
+export default function TopNavBar(props) {
   return (
     <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
       <button
