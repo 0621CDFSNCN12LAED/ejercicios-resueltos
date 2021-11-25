@@ -1,4 +1,4 @@
-import CategoriesInDb from "./categoriesInDb/categoriesInDb";
+import GenresInDb from "./categoriesInDb/categoriesInDb";
 import ContentCard from "./contentCard/contentCard";
 import ContentRowTop from "./contentRowTop/contentRowTop";
 import Footer from "./footer/footer";
@@ -23,8 +23,8 @@ export default function ContentWrapper() {
               <MovieDetail />
             </ContentCard>
 
-            <ContentCard>
-              <CategoriesInDb />
+            <ContentCard title="Generos en la DB">
+              <GenresInDb />
             </ContentCard>
           </div>
         </div>
