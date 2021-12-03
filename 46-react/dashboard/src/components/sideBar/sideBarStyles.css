@@ -1,0 +1,9 @@
+a.nav-link.active {
+  color: white !important;
+  font-weight: bold !important;
+}
+
+.nav-link.active i {
+  color: white !important;
+  font-weight: bold !important;
+}
